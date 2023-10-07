@@ -8,10 +8,12 @@ module.exports = {
         "deep-blue": "#010026",
         blue: "#2CBCE9",
         red: "#DC4492",
-        yellow: "#FDCC49",
-        grey: "#ededed",
+        yellow: "#e2ab7f",
+        grey: "#505668",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
+        redish: "#c05850",
+        caramel: "#f1ece1",
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
@@ -30,6 +32,9 @@ module.exports = {
         person2: "url('./assets/person-2.png')",
         person3: "url('./assets/person-3.png')",
       },
+      spacing: {
+        "custom-shape": "polygon(40% 0%, 80% 10%, 100% 50%, 60% 100%, 20% 90%)",
+      },
     },
     screens: {
       xs: "480px",
@@ -40,5 +45,6 @@ module.exports = {
       xl: "1700px",
     },
   },
+
   plugins: [],
 };

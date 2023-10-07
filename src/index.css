@@ -9,6 +9,7 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: #010026;
+  background-color: #3a353f;
   @apply text-white;
 }
+/* styles.css or your React component's style block */
