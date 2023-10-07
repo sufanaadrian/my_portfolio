@@ -10,7 +10,14 @@
 
 # production
 /build
+node_modules
+bower_components
 
+*.sublime*
+
+psd
+thumb
+sketch
 # misc
 .DS_Store
 .env.local
