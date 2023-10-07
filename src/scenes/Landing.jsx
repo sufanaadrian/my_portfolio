@@ -1,4 +1,5 @@
 import useMediaQuery from "../hooks/useMediaQuery";
+import SocialMediaIcons from "../components/SocialMediaIcons";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
@@ -36,7 +37,7 @@ const Landing = ({ setSelectedPage }) => {
             </motion.div>
             <img
               alt="profile"
-              className="hover:filter hover:scale-110 hover:brightness-125
+              className="hover:filter hover:scale-110 hover:brightness-110
                transition duration-500 z-10 w-full max-w-[400px]
                 md:max-w-[600px] "
               src="assets/profile1.png"
@@ -45,7 +46,7 @@ const Landing = ({ setSelectedPage }) => {
         ) : (
           <img
             alt="profile"
-            className="hover:filter hover:scale-105 hover:brightness-125
+            className="hover:filter hover:scale-105 hover:brightness-110
              transition duration-500 z-10 
              w-full max-w-[400px] md:max-w-[600px] rounded-b-full rounded-e-full"
             src="assets/profile1.png"
@@ -90,6 +91,49 @@ const Landing = ({ setSelectedPage }) => {
             My name is Sufana Adrian, and I'm passionate about web developing.
             Go take a look over my work. Hope you will like it!
           </motion.p>
+        </motion.div>
+        <motion.div
+          className="flex mt-5 justify-center md:justify-start"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <AnchorLink
+            className="bg-redish text-white rounded-sm py-3 px-7 font-semibold
+              hover:bg-redish hover:text-white transition duration-500"
+            onClick={() => setSelectedPage("projects")}
+            href="#contact"
+          >
+            My work.
+          </AnchorLink>
+          <AnchorLink
+            className="rounded-r-sm bg-redish py-0.5 pr-0.5"
+            onClick={() => setSelectedPage("contact")}
+            href="#contact"
+          >
+            <div className="text-bgcolor bg-caramel hover:text-redish transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+              Let's talk.
+            </div>
+          </AnchorLink>
+        </motion.div>
+
+        <motion.div
+          className="flex mt-5 justify-center md:justify-start"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <SocialMediaIcons />
         </motion.div>
       </div>
     </section>
