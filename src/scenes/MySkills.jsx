@@ -63,7 +63,11 @@ const MySkills = () => {
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src="assets/skills-image.png" />
+            <img
+              alt="skills"
+              className="z-10 w-full h-full"
+              src="assets/skills-image.png"
+            />
           )}
         </div>
       </div>
@@ -72,7 +76,7 @@ const MySkills = () => {
         className={
           !isAboveLarge
             ? " md:flex md:justify-between mt-16 gap-40"
-            : "ml-96 mr-96 md:flex md:justify-between mt-16 gap-40"
+            : "ml-72 mr-72 md:flex md:justify-between mt-16 gap-40"
         }
       >
         <motion.div
@@ -93,16 +97,10 @@ const MySkills = () => {
                 Front End
               </p>
             </div>
-            {isAboveLarge ? (
-              <div className="w-1/2 md:w-3/4 h-32 bg-grey absolute right-0 top-0 z-[-1]" />
-            ) : (
-              <div className="w-1/2 md:w-3/4 h-32 bg-grey absolute right-0 top-0 z-[-1]"></div>
-            )}
+            <div className="w-1/2 md:w-3/4 h-32 bg-grey absolute right-0 top-0 z-[-1] rounded-b-full rounded-e-full" />
           </div>
-          <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
+          <p className="mt-5 text-center text-lg">
+            HTML / CSS / Tailwind CSS / JavaScript / React
           </p>
         </motion.div>
 
@@ -125,13 +123,10 @@ const MySkills = () => {
                 Back End
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-caramel absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-caramel absolute right-0 top-0 z-[-1] rounded-b-full rounded-e-full" />
           </div>
-          <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+          <p className="mt-5 text-center text-lg">
+            MERN Stack / MongoDB / Express.js / Node.js / Render
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -151,13 +146,10 @@ const MySkills = () => {
               <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3">Tools</p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1] rounded-b-full rounded-e-full" />
           </div>
-          <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+          <p className="mt-5 text-center text-lg">
+            VS Code / Git & Github / MUI / NPM
           </p>
         </motion.div>
       </div>
