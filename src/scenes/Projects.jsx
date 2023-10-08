@@ -1,3 +1,4 @@
+import { useState } from "react";
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 
@@ -19,7 +20,6 @@ const Project = ({ title, description }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
-  console.log(projectTitle);
 
   return (
     <motion.div variants={projectVariant} className="relative">
@@ -28,7 +28,7 @@ const Project = ({ title, description }) => {
         <p className="mt-7">{description}</p>
       </div>
       <img
-        className="p-0.5"
+        className="p-0.5  "
         src={`../assets/${projectTitle}.jpeg`}
         alt={projectTitle}
       />
@@ -90,16 +90,16 @@ const Projects = () => {
             title="SA-Visuals"
             description="More than a simple gallery, one that defines and displays the hidden details and techniques of photographers."
           />
-          <Project title="Inwork 1" description="Coming soon" />
+          {/* <Project title="Inwork 1" description="Coming soon" /> */}
 
           {/* ROW 2 */}
+          {/* <Project title="Inwork 1" description="Coming soon" />
           <Project title="Inwork 1" description="Coming soon" />
-          <Project title="Inwork 1" description="Coming soon" />
-          <Project title="Inwork 1" description="Coming soon" />
+          <Project title="Inwork 1" description="Coming soon" /> */}
 
           {/* ROW 3 */}
-          <Project title="Inwork 1" description="Coming soon" />
-          <Project title="Inwork 1" description="Coming soon" />
+          {/* <Project title="Inwork 1" description="Coming soon" />
+          <Project title="Inwork 1" description="Coming soon" /> */}
           <div
             className="m-0.5 flex justify-center text-center items-center p-10 bg-redish
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
