@@ -105,7 +105,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <AnchorLink
             className="bg-redish text-white rounded-sm py-3 px-7 font-semibold
-              hover:bg-redish hover:text-white transition duration-500"
+              hover:text-white transition duration-500"
             onClick={() => setSelectedPage("projects")}
             href="#projects"
           >

@@ -58,15 +58,15 @@ const MySkills = () => {
               </motion.div>
               <img
                 alt="skills"
-                className="z-10"
-                src="assets/skills-image.png"
+                className="z-10 w-96 h-auto"
+                src="assets/skills-image2.png"
               />
             </div>
           ) : (
             <img
               alt="skills"
-              className="z-10 w-full h-full"
-              src="assets/skills-image.png"
+              className="z-10 w- h-full"
+              src="assets/skills-image2.png"
             />
           )}
         </div>

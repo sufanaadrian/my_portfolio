@@ -16,9 +16,9 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, description }) => {
+const Project = ({ title, description, appLink, githubLink }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-8 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
@@ -26,6 +26,20 @@ const Project = ({ title, description }) => {
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">{description}</p>
+        <div className="pt-10">
+          <a
+            href={appLink}
+            class="m-3 font-medium text-blue-600 dark:text-blue-500 hover:underline"
+          >
+            Open the app
+          </a>
+          <a
+            href={githubLink}
+            class="m-3 font-medium text-blue-600 dark:text-blue-500 hover:underline"
+          >
+            Source code
+          </a>
+        </div>
       </div>
       <img
         className="p-0.5  "
@@ -89,6 +103,8 @@ const Projects = () => {
           <Project
             title="SA-Visuals"
             description="More than a simple gallery, one that defines and displays the hidden details and techniques of photographers."
+            appLink="https://sa-visuals.onrender.com/"
+            githubLink="https://github.com/sufanaadrian/Photogram"
           />
           {/* <Project title="Inwork 1" description="Coming soon" /> */}
 
